@@ -1,0 +1,15 @@
+-buildpath: \
+	org.adempiere.base;version=latest,\
+	org.eclipse.osgi.services;version=latest,\
+	osgi.annotation
+	
+javac.source: 11
+javac.target: 11
+
+#Require-Bundle: org.adempiere.base;bundle-version="6.2.0"
+
+Bundle-Version: 0.0.0.${tstamp}
+Export-Package: p1
+Import-Package: org.compiere.*,java.sql, *
+-runfw: org.eclipse.osgi;version='[3.13.100.v20180827-1536,3.13.100.v20180827-1536]'
+-runee: JavaSE-11

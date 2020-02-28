@@ -1,0 +1,16 @@
+-buildpath: \
+	org.adempiere.base;version=latest,\
+	p1,\
+	org.eclipse.osgi.services;version=latest,\
+	osgi.annotation
+	
+javac.source: 11
+javac.target: 11
+
+-removeheaders: Private-Package
+
+Bundle-Version: 0.0.0.${tstamp}
+Export-Package: p2
+Import-Package: *
+-runfw: org.eclipse.osgi;version='[3.13.100.v20180827-1536,3.13.100.v20180827-1536]'
+-runee: JavaSE-11
